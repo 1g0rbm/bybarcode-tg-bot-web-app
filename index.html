@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>ByBarcode</title>
 </head>
+<script>
+    window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('message').textContent = urlParams.get('test')
+    }
+</script>
 <body>
 <h1>Hello, telegram!</h1>
+<div id="message">
+</div>
 </body>
 </html>
